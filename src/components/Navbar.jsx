@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <Shield className="w-8 h-8 text-[#00FF88]" />
-            <span className="text-2xl font-bold text-glow">PISH</span>
+            <span className="text-2xl font-bold text-glow">P.I.S.H</span>
           </Link>
           
           <div className="hidden md:flex space-x-8 items-center">
