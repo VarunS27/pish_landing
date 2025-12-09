@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { 
   Shield, Link2, Mail, Bell, Chrome, History, 
   CheckCircle2, AlertTriangle, Lock, Zap, Eye,
-  Sparkles, ChevronDown, X
+  Sparkles, ChevronDown, X, Package, Download,
+  Brain, MessageSquare, Phone, ArrowRight
 } from 'lucide-react'
 import MatrixBackground from '../components/MatrixBackground'
 
@@ -484,6 +485,233 @@ export default function Home() {
         </div>
       </section>
 
+      {/* P.I.S.H Product Suite Section */}
+      <section id="products" className="py-20 bg-[#0A0A0A]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <Package className="w-12 h-12 text-[#00FF88]" />
+              <h2 className="text-4xl md:text-5xl font-bold text-glow">P.I.S.H Product Suite</h2>
+            </div>
+            <p className="text-xl text-gray-400">Enterprise-Grade Phishing Defense Solutions</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Browser Extension Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-black border-2 border-[#00FF88]/20 rounded-lg p-6 hover:border-[#00FF88] transition-all group"
+            >
+              <div className="bg-linear-to-br from-blue-500/10 to-blue-600/10 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <Chrome className="w-8 h-8 text-blue-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Browser Extension for PC</h3>
+              <p className="text-gray-400 mb-6 text-sm">
+                Real-time phishing detection extension for Chrome, Firefox, and Edge with instant threat alerts and URL scanning.
+              </p>
+              <ul className="space-y-2 mb-6 text-sm">
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Real-time URL analysis</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Instant threat blocking</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Low resource footprint</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Privacy-focused design</span>
+                </li>
+              </ul>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 text-xs text-gray-500 mb-3">
+                  <Shield className="w-4 h-4" />
+                  <span>P.I.S.H Team</span>
+                </div>
+                <a
+                  href="/products/P.I.S.H._browser_extension.zip"
+                  download="P.I.S.H._browser_extension.zip"
+                  className="w-full bg-linear-to-r from-blue-500 to-blue-600 text-white px-4 py-3 rounded-lg font-bold hover:from-blue-600 hover:to-blue-700 transition-all flex items-center justify-center space-x-2 group"
+                >
+                  <Download size={18} />
+                  <span>Download</span>
+                </a>
+              </div>
+            </motion.div>
+
+            {/* WhatsApp Phishing Detection Card - MVP */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-linear-to-br from-yellow-500/5 to-orange-500/5 border-2 border-yellow-500 rounded-lg p-6 hover:border-yellow-400 transition-all group relative"
+            >
+              <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-bold flex items-center space-x-1">
+                <Sparkles size={12} />
+                <span>MVP</span>
+              </div>
+              <div className="bg-linear-to-br from-green-500/20 to-green-600/20 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <MessageSquare className="w-8 h-8 text-green-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">WhatsApp Phishing Detection</h3>
+              <p className="text-gray-300 mb-6 text-sm">
+                AI-powered service detecting phishing attempts in WhatsApp messages, links, and media files with 96% accuracy.
+              </p>
+              <ul className="space-y-2 mb-6 text-sm">
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Message content analysis</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Malicious link detection</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Image/document scanning</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Group chat monitoring</span>
+                </li>
+              </ul>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 text-xs text-gray-500 mb-3">
+                  <Shield className="w-4 h-4" />
+                  <span>P.I.S.H Team</span>
+                </div>
+                <a
+                  href="/products/P.I.S.H._Whatsapp-SMS_Phishing_Detection_.zip"
+                  download="P.I.S.H._Whatsapp-SMS_Phishing_Detection_.zip"
+                  className="w-full bg-linear-to-r from-yellow-500 to-orange-500 text-black px-4 py-3 rounded-lg font-bold hover:from-yellow-600 hover:to-orange-600 transition-all flex items-center justify-center space-x-2"
+                >
+                  <Download size={18} />
+                  <span>Download</span>
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Vishing Detection Service Card - MVP */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-linear-to-br from-yellow-500/5 to-orange-500/5 border-2 border-yellow-500 rounded-lg p-6 hover:border-yellow-400 transition-all group relative"
+            >
+              <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-bold flex items-center space-x-1">
+                <Sparkles size={12} />
+                <span>MVP</span>
+              </div>
+              <div className="bg-linear-to-br from-yellow-500/20 to-orange-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <Phone className="w-8 h-8 text-yellow-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Vishing Detection Service</h3>
+              <p className="text-gray-300 mb-6 text-sm">
+                Voice phishing detection using NLP and voice pattern analysis to identify fraudulent calls in real-time.
+              </p>
+              <ul className="space-y-2 mb-6 text-sm">
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Real-time Number Detection</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Real-time Caller Name Detection</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Safety Alerts Before Call pickup</span>
+                </li>
+              </ul>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 text-xs text-gray-500 mb-3">
+                  <Shield className="w-4 h-4" />
+                  <span>P.I.S.H Team</span>
+                </div>
+                <a
+                  href="/products/P.I.S.H_Call_Phishing_Detection_.zip"
+                  download="P.I.S.H_Call_Phishing_Detection_.zip"
+                  className="w-full bg-linear-to-r from-yellow-500 to-orange-500 text-black px-4 py-3 rounded-lg font-bold hover:from-yellow-600 hover:to-orange-600 transition-all flex items-center justify-center space-x-2"
+                >
+                  <Download size={18} />
+                  <span>Download</span>
+                </a>
+              </div>
+            </motion.div>
+
+            {/* AI Prediction Model Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="bg-linear-to-br from-yellow-500/5 to-orange-500/5 border-2 border-yellow-500 rounded-lg p-6 hover:border-yellow-400 transition-all group relative"
+            >
+              <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-bold flex items-center space-x-1">
+                <Sparkles size={12} />
+                <span>MVP</span>
+              </div>
+              <div className="bg-linear-to-br from-purple-500/20 to-pink-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <Brain className="w-8 h-8 text-purple-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3">AI Prediction Model</h3>
+              <p className="text-gray-300 mb-6 text-sm">
+                DistilBERT-based transformer model fine-tuned for phishing detection with 96.9% accuracy and sub-50ms latency.
+              </p>
+              <ul className="space-y-2 mb-6 text-sm">
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Zero-day threat detection</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Multi-language support</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Edge deployment ready</span>
+                </li>
+                <li className="flex items-start text-gray-300">
+                  <CheckCircle2 className="text-[#00FF88] mr-2 shrink-0 mt-0.5" size={16} />
+                  <span>Continuous learning</span>
+                </li>
+              </ul>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 text-xs text-gray-500 mb-3">
+                  <Shield className="w-4 h-4" />
+                  <span>P.I.S.H Team</span>
+                </div>
+                <a
+                  href="#contact"
+                  className="w-full bg-linear-to-r from-yellow-500 to-orange-500 text-black px-4 py-3 rounded-lg font-bold hover:from-yellow-600 hover:to-orange-600 transition-all flex items-center justify-center space-x-2 scroll-smooth"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  <ArrowRight size={18} />
+                  <span>Contact for Access</span>
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -767,3 +995,4 @@ export default function Home() {
     </div>
   )
 }
+

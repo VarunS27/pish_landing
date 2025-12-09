@@ -30,6 +30,7 @@ export default function Navbar() {
               <>
                 <a href="/#home" className="hover:text-[#00FF88] transition-colors">Home</a>
                 <a href="/#features" className="hover:text-[#00FF88] transition-colors">Features</a>
+                <a href="/#products" className="hover:text-[#00FF88] transition-colors">Products</a>
                 <a href="/#pricing" className="hover:text-[#00FF88] transition-colors">Pricing</a>
                 <a href="/#contact" className="hover:text-[#00FF88] transition-colors">Contact</a>
                 <a 
@@ -87,6 +88,7 @@ export default function Navbar() {
               <>
                 <a href="/#home" className="block hover:text-[#00FF88]">Home</a>
                 <a href="/#features" className="block hover:text-[#00FF88]">Features</a>
+                <a href="/#products" className="block hover:text-[#00FF88]">Products</a>
                 <a href="/#pricing" className="block hover:text-[#00FF88]">Pricing</a>
                 <a href="/#contact" className="block hover:text-[#00FF88]">Contact</a>
                 <a 
