@@ -314,8 +314,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Real-time Alerts Section */}
-      <section className="py-20 bg-black overflow-hidden">
+      
+      {/* <section className="py-20 bg-black overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -354,7 +354,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Dashboard Preview Section */}
       <section className="py-20 bg-[#0A0A0A]">
@@ -449,10 +449,14 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex space-x-4">
-                <button className="bg-[#00FF88] text-black px-6 py-3 rounded-lg font-bold hover:bg-[#39FF14] transition-all flex items-center">
+                <a
+                  href="/products/P.I.S.H._browser_extension.zip"
+                  download="P.I.S.H._browser_extension.zip"
+                  className="bg-[#00FF88] text-black px-6 py-3 rounded-lg font-bold hover:bg-[#39FF14] transition-all flex items-center"
+                >
                   <Chrome className="mr-2" size={20} />
                   Add to Chrome
-                </button>
+                </a>
               </div>
             </motion.div>
 
@@ -713,7 +717,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#0A0A0A]">
+      {/* <section className="py-20 bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -769,7 +773,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-black">
