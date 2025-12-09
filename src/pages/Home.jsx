@@ -190,7 +190,7 @@ export default function Home() {
                 className="bg-[#0A0A0A] border border-[#00FF88]/20 rounded-lg p-6 hover:border-[#00FF88] transition-all group"
               >
                 <div className="flex items-start space-x-4">
-                  <CheckCircle2 className="text-[#00FF88] flex-shrink-0 group-hover:text-[#39FF14]" size={24} />
+                  <CheckCircle2 className="text-[#00FF88] shrink-0 group-hover:text-[#39FF14]" size={24} />
                   <div>
                     <feature.icon className="text-[#00FF88] mb-3" size={32} />
                     <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
@@ -227,9 +227,9 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2">Free</h3>
               <div className="text-4xl font-bold text-[#00FF88] mb-6">₹0</div>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>5 link scans per day</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>No login required</span></li>
-                <li className="flex items-start text-gray-500"><X className="text-gray-500 mr-2 flex-shrink-0" size={20} /><span>No alerts</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>5 link scans per day</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>No login required</span></li>
+                <li className="flex items-start text-gray-500"><X className="text-gray-500 mr-2 shrink-0" size={20} /><span>No alerts</span></li>
               </ul>
               <button onClick={() => navigate('/signup')} className="w-full border border-[#00FF88] text-[#00FF88] py-3 rounded-lg hover:bg-[#00FF88] hover:text-black transition-all">
                 Get Started
@@ -248,11 +248,11 @@ export default function Home() {
               <div className="text-4xl font-bold text-[#00FF88] mb-2">₹999</div>
               <div className="text-sm text-gray-400 mb-6">per year</div>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Browser extension</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>15 scans per day</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Day-to-day alerts</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>User awareness tips</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Limited history</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Browser extension</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>15 scans per day</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Day-to-day alerts</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>User awareness tips</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Limited history</span></li>
               </ul>
               <button onClick={() => navigate('/signup')} className="w-full bg-[#00FF88] text-black py-3 rounded-lg hover:bg-[#39FF14] transition-all font-bold">
                 Choose Basic
@@ -265,7 +265,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="bg-gradient-to-b from-[#00FF88]/10 to-black border-2 border-[#00FF88] rounded-lg p-8 relative neon-glow transform lg:scale-105"
+              className="bg-linear-to-b from-[#00FF88]/10 to-black border-2 border-[#00FF88] rounded-lg p-8 relative neon-glow transform lg:scale-105"
             >
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#00FF88] text-black px-4 py-1 rounded-full text-sm font-bold">
                 MOST POPULAR
@@ -274,13 +274,13 @@ export default function Home() {
               <div className="text-4xl font-bold text-[#00FF88] mb-2">₹3,599</div>
               <div className="text-sm text-gray-400 mb-6">per year</div>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>WhatsApp scanning</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Unlimited link scans</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Priority detection</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Prior alerts</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Dashboard access</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Full history logs</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Login required</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>WhatsApp scanning</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Unlimited link scans</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Priority detection</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Prior alerts</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Dashboard access</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Full history logs</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Login required</span></li>
               </ul>
               <button onClick={() => navigate('/signup')} className="w-full bg-[#00FF88] text-black py-3 rounded-lg hover:bg-[#39FF14] transition-all font-bold neon-glow">
                 Choose Pro
@@ -298,12 +298,12 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2">Enterprise</h3>
               <div className="text-3xl font-bold text-[#00FF88] mb-6">Custom</div>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Team accounts</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>API access</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Threat reports</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Full all-over scanning</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Custom security integration</span></li>
-                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 flex-shrink-0" size={20} /><span>Dedicated support</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Team accounts</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>API access</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Threat reports</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Full all-over scanning</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Custom security integration</span></li>
+                <li className="flex items-start"><CheckCircle2 className="text-[#00FF88] mr-2 shrink-0" size={20} /><span>Dedicated support</span></li>
               </ul>
               <button className="w-full border border-[#00FF88] text-[#00FF88] py-3 rounded-lg hover:bg-[#00FF88] hover:text-black transition-all">
                 Contact Sales
@@ -342,7 +342,7 @@ export default function Home() {
               ]).map((alert, i) => (
                 <div
                   key={i}
-                  className="flex-shrink-0 bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg p-6 min-w-[400px] hover:border-[#00FF88] transition-all"
+                  className="shrink-0 bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg p-6 min-w-[400px] hover:border-[#00FF88] transition-all"
                 >
                   <div className="flex items-center space-x-3">
                     <alert.icon className="text-[#00FF88]" size={24} />
@@ -426,21 +426,21 @@ export default function Home() {
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
-                  <CheckCircle2 className="text-[#00FF88] mr-3 flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle2 className="text-[#00FF88] mr-3 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="text-lg font-bold mb-1">One-Click Scanning</h3>
                     <p className="text-gray-400">Scan any link instantly from your browser</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle2 className="text-[#00FF88] mr-3 flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle2 className="text-[#00FF88] mr-3 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="text-lg font-bold mb-1">Real-Time Blocking</h3>
                     <p className="text-gray-400">Automatic protection before you click</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle2 className="text-[#00FF88] mr-3 flex-shrink-0 mt-1" size={24} />
+                  <CheckCircle2 className="text-[#00FF88] mr-3 shrink-0 mt-1" size={24} />
                   <div>
                     <h3 className="text-lg font-bold mb-1">Privacy First</h3>
                     <p className="text-gray-400">Your data never leaves your device</p>
@@ -610,7 +610,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-[#0A0A0A]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -621,46 +621,146 @@ export default function Home() {
             <p className="text-xl text-gray-400">Have questions? We're here to help</p>
           </motion.div>
 
-          <motion.form
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-black border border-[#00FF88]/30 rounded-lg p-8"
-          >
-            <div className="mb-6">
-              <label className="block text-sm font-bold mb-2">Name</label>
-              <input
-                type="text"
-                className="w-full bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg px-4 py-3 focus:border-[#00FF88] focus:outline-none transition-all text-white"
-                placeholder="Your name"
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-sm font-bold mb-2">Email</label>
-              <input
-                type="email"
-                className="w-full bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg px-4 py-3 focus:border-[#00FF88] focus:outline-none transition-all text-white"
-                placeholder="your@email.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-sm font-bold mb-2">Message</label>
-              <textarea
-                rows="5"
-                className="w-full bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg px-4 py-3 focus:border-[#00FF88] focus:outline-none transition-all resize-none text-white"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-[#00FF88] text-black py-3 rounded-lg font-bold hover:bg-[#39FF14] transition-all"
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
-              Send Message
-            </button>
-          </motion.form>
+              <form className="bg-black border border-[#00FF88]/30 rounded-lg p-8">
+                <h3 className="text-2xl font-bold mb-6 text-[#00FF88]">Send us a Message</h3>
+                <div className="mb-6">
+                  <label className="block text-sm font-bold mb-2">Name</label>
+                  <input
+                    type="text"
+                    className="w-full bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg px-4 py-3 focus:border-[#00FF88] focus:outline-none transition-all text-white"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div className="mb-6">
+                  <label className="block text-sm font-bold mb-2">Email</label>
+                  <input
+                    type="email"
+                    className="w-full bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg px-4 py-3 focus:border-[#00FF88] focus:outline-none transition-all text-white"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div className="mb-6">
+                  <label className="block text-sm font-bold mb-2">Message</label>
+                  <textarea
+                    rows="5"
+                    className="w-full bg-[#0A0A0A] border border-[#00FF88]/30 rounded-lg px-4 py-3 focus:border-[#00FF88] focus:outline-none transition-all resize-none text-white"
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-[#00FF88] text-black py-3 rounded-lg font-bold hover:bg-[#39FF14] transition-all"
+                >
+                  Send Message
+                </button>
+              </form>
+              
+              <div className="mt-6 text-center">
+                <p className="text-gray-400">For Enterprise inquiries, <a href="mailto:info@pish.com?subject=Enterprise%20Inquiry" className="text-[#00FF88] hover:underline">click here</a></p>
+              </div>
+            </motion.div>
 
-          <div className="mt-8 text-center">
-            <p className="text-gray-400">For Enterprise inquiries, <a href="#enterprise" className="text-[#00FF88] hover:underline">click here</a></p>
+            {/* Company Info */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <div className="bg-black border border-[#00FF88]/30 rounded-lg p-8">
+                <h3 className="text-2xl font-bold mb-6 text-[#00FF88]">Contact Information</h3>
+                
+                <div className="space-y-6">
+                  {/* Phone */}
+                  <a 
+                    href="tel:+917208151678"
+                    className="flex items-start space-x-4 p-4 bg-[#0A0A0A] rounded-lg hover:border hover:border-[#00FF88] transition-all group"
+                  >
+                    <div className="w-12 h-12 bg-[#00FF88]/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#00FF88]/20 transition-all">
+                      <svg className="w-6 h-6 text-[#00FF88]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Contact Number</div>
+                      <div className="font-bold text-lg group-hover:text-[#00FF88] transition-colors">+91 72081 51678</div>
+                    </div>
+                  </a>
+
+                  {/* Email */}
+                  <a 
+                    href="mailto:info@pish.com"
+                    className="flex items-start space-x-4 p-4 bg-[#0A0A0A] rounded-lg hover:border hover:border-[#00FF88] transition-all group"
+                  >
+                    <div className="w-12 h-12 bg-[#00FF88]/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#00FF88]/20 transition-all">
+                      <Mail className="text-[#00FF88]" size={24} />
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Email Address</div>
+                      <div className="font-bold text-lg group-hover:text-[#00FF88] transition-colors">info@pish.com</div>
+                    </div>
+                  </a>
+
+                  {/* Address */}
+                  <a 
+                    href="https://www.google.com/maps/place/Somaiya+Vidyavihar+University/@19.0727,72.8991,17z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start space-x-4 p-4 bg-[#0A0A0A] rounded-lg hover:border hover:border-[#00FF88] transition-all group"
+                  >
+                    <div className="w-12 h-12 bg-[#00FF88]/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#00FF88]/20 transition-all">
+                      <svg className="w-6 h-6 text-[#00FF88]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-400 mb-1">Our Address</div>
+                      <div className="font-bold text-lg group-hover:text-[#00FF88] transition-colors">
+                        Somaiya Vidyavihar University<br />
+                        <span className="text-sm text-gray-400">Mumbai, India</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              {/* Map */}
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="bg-black border-2 border-[#00FF88]/30 rounded-lg overflow-hidden hover:border-[#00FF88] transition-all"
+              >
+                <a 
+                  href="https://www.google.com/maps/place/Somaiya+Vidyavihar+University/@19.0727,72.8991,17z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative group"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8267662805546!2d72.89685931490088!3d19.072737087093595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62574d6e48d%3A0x5e5a1b8f3e3e6b39!2sSomaiya%20Vidyavihar%20University!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="grayscale group-hover:grayscale-0 transition-all duration-300"
+                  ></iframe>
+                  <div className="absolute inset-0 bg-[#00FF88]/0 group-hover:bg-[#00FF88]/10 transition-all flex items-center justify-center">
+                    <span className="bg-[#00FF88] text-black px-6 py-2 rounded-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+                      Open in Google Maps
+                    </span>
+                  </div>
+                </a>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>
